@@ -14,21 +14,23 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Dog myDog = new Dog();
+        Dog myDog = new Dog("Havane");
 
-        myDog.age=7;
-        myDog.name="Havane";
-        myDog.breed="Caniche";
+        //myDog.age=7;
+        //myDog.name="Havane";
+        //myDog.breed="Caniche";
         //myDog.numberOfLegs=4;
 
-        Dog yourDog = new Dog();
-        yourDog.age=8;
-        yourDog.name="Rex";
+        Dog yourDog = new Dog("Rex");
+        //yourDog.age=8;
+        //yourDog.name="Rex";
 
         int x=1;
         int answer=x+1;
         myDog.bark();
-        yourDog.bark();
+        yourDog.barkAt("a cat");
+
+
     }
 
 
